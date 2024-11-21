@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메모 애플리케이션</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="setup-container" class="container hidden">
+        <h1>관리자 계정 생성</h1>
+        <input type="text" id="new-username" placeholder="아이디를 입력하세요">
+        <input type="password" id="new-password" placeholder="비밀번호를 입력하세요">
+        <button id="setup-btn">계정 생성</button>
+        <div id="setup-error" class="error-message"></div>
+    </div>
+
+    <div id="login-container" class="container hidden">
+        <h1>관리자 로그인</h1>
+        <input type="text" id="username" placeholder="아이디">
+        <input type="password" id="password" placeholder="비밀번호">
+        <button id="login-btn">로그인</button>
+        <div id="login-error" class="error-message"></div>
+    </div>
+
+    <div id="memo-container" class="container hidden">
+        <h1>메모 애플리케이션</h1>
+        <textarea id="memo-input" placeholder="메모를 입력하세요..."></textarea>
+        <button id="save-btn">저장</button>
+        <div id="memo-list"></div>
+        <button id="logout-btn" class="logout-btn">로그아웃</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
